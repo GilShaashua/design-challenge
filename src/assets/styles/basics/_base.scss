@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Livvic-SemiBold;
+    line-height: 1.6;
+    color: $clr3;
+}
+
+body {
+    font-size: rem(16px);
+    font-family: Livvic-SemiBold;
+    color: $clr3;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+// a:hover {
+//     text-decoration: underline;
+// }

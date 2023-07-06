@@ -1,0 +1,41 @@
+.app-header {
+    background-color: $clr1;
+    height: 5em;
+
+    .app-header-inner-container {
+        .logo-nav-inner-container {
+            column-gap: em(40px);
+
+            nav {
+                & > * {
+                    margin-inline: 1em;
+                }
+            }
+        }
+        .contact-us-container {
+            button {
+                border-radius: 555px;
+                border: 1px solid $clr3;
+                padding-block: em(12px);
+                padding-inline: em(24px);
+            }
+        }
+    }
+
+    nav {
+        font-size: 0.8em;
+
+        a {
+            color: $clr2;
+
+            &.active {
+                color: $clr3;
+            }
+
+            &:hover {
+                transform: scale(102%);
+                transition: transform 0.2s ease-in-out;
+            }
+        }
+    }
+}
