@@ -18,12 +18,14 @@
                 }
             }
         }
-        .contact-us-container {
-            button {
-                border-radius: 555px;
-                border: 1px solid $clr3;
-                padding-block: em(12px);
-                padding-inline: em(24px);
+        button {
+            border-radius: 555px;
+            border: 1px solid $clr3;
+            padding-block: em(12px);
+            padding-inline: em(24px);
+
+            a {
+                color: $clr3;
             }
         }
     }

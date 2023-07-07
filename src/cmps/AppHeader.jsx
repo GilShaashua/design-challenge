@@ -9,13 +9,15 @@ export function AppHeader() {
                         <h1> myteam </h1>
                     </div>
                     <nav>
-                        <NavLink to={'/'}> home </NavLink>
-                        <NavLink to={'/about'}> about </NavLink>
+                        <NavLink to={'/design-challenge'}> home </NavLink>
+                        <NavLink to={'/design-challenge/about'}>about</NavLink>
                     </nav>
                 </div>
-                <div className="contact-us-container">
-                    <button>contact us</button>
-                </div>
+                <button>
+                    <NavLink to={'/design-challenge/contact-us'}>
+                        contact us
+                    </NavLink>
+                </button>
             </div>
         </header>
     )

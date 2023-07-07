@@ -11,9 +11,12 @@ function App() {
             <AppHeader />
             <main className="main-layout full">
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/contact-us" element={<ContactUs />} />
+                    <Route path="/design-challenge" element={<Home />} />
+                    <Route path="/design-challenge/about" element={<About />} />
+                    <Route
+                        path="/design-challenge/contact-us"
+                        element={<ContactUs />}
+                    />
                 </Routes>
             </main>
             <AppFooter />
