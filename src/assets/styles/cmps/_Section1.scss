@@ -1,0 +1,66 @@
+.section1 {
+    background-color: $clr7;
+    position: relative;
+
+    .element-right {
+        width: 5em;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .section1-inner-container {
+        padding-block: 5em;
+        justify-content: space-between;
+        position: relative;
+        column-gap: 8em;
+
+        .element-heading-container {
+            flex: 1;
+            .element {
+                height: 2.5px;
+                width: 2em;
+                background-color: $clr2;
+                position: absolute;
+                top: 3em;
+            }
+        }
+
+        h1 {
+            line-height: 1;
+        }
+
+        .content {
+            display: grid;
+            row-gap: 2em;
+            flex: 1;
+
+            article {
+                column-gap: 1.5em;
+                align-items: flex-start;
+
+                img {
+                    width: 4em;
+                }
+
+                .inner-content {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 0.7em;
+
+                    h3 {
+                        font-size: em(18px);
+                        color: $clr2;
+                        width: fit-content;
+                    }
+
+                    p {
+                        font-size: em(15px);
+                        color: lightgray;
+                        width: fit-content;
+                    }
+                }
+            }
+        }
+    }
+}

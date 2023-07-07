@@ -6,6 +6,12 @@
         .logo-nav-inner-container {
             column-gap: em(40px);
 
+            .logo {
+                h1 {
+                    font-size: em(30px);
+                }
+            }
+
             nav {
                 & > * {
                     margin-inline: 1em;

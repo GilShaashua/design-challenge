@@ -1,0 +1,32 @@
+.banner-container {
+    background-color: $clr2;
+    height: em(200px);
+    position: relative;
+
+    img {
+        width: 10em;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .banner-inner-container {
+        h3 {
+            font-size: em(48px);
+            font-family: Livvic-Bold;
+            color: $clr7;
+            line-height: 0;
+        }
+
+        button {
+            height: em(48px);
+            width: em(153px);
+            line-height: 0;
+            color: $clr7;
+            font-size: em(18px);
+            border-radius: 555px;
+            background-color: transparent;
+            border: 2px solid $clr7;
+        }
+    }
+}

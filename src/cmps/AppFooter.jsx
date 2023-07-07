@@ -7,7 +7,7 @@ export function AppFooter() {
     return (
         <footer className="app-footer full main-layout">
             <div className="footer-inner-container flex align-center space-between">
-                <div className="logo-nav-location-container flex align-center justify-center">
+                <div className="logo-nav-location-container flex align-center">
                     <div className="logo-nav-container">
                         <div className="logo">
                             <h1>myteam</h1>

@@ -18,9 +18,8 @@ export function Hero() {
                 />
                 <div className="hero-inner-container flex align-center">
                     <div className="title">
-                        <h1>Find the</h1>
                         <h1>
-                            best <span>talent</span>
+                            Find the <br /> best <span>talent</span>
                         </h1>
                     </div>
                     <div className="paragraph">

@@ -12,17 +12,18 @@ html {
 
 body {
     font-size: rem(16px);
-    font-family: Livvic-SemiBold;
-    color: $clr3;
 }
 
 img {
     width: 100%;
-    object-fit: cover;
 }
 
 a {
     text-decoration: none;
+}
+
+h1 {
+    font-size: em(48px);
 }
 
 // a:hover {

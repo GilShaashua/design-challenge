@@ -2,7 +2,7 @@
     background-color: $clr1;
     align-content: center;
     position: relative;
-    height: 50vh;
+    height: 45vh;
 
     .element-left-side {
         width: 5em;
@@ -26,17 +26,15 @@
         position: relative;
 
         .hero-inner-container {
-            height: 12em;
             width: 100%;
-            column-gap: 10em;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            height: 10em;
+            margin-block-end: 4em;
 
             .title {
-                height: 100%;
                 h1 {
-                    font-size: em(70px);
+                    font-size: em(100px);
                     font-family: Livvic-Bold;
                     line-height: 1;
 
@@ -51,9 +49,11 @@
                 height: 100%;
 
                 .paragraph-inner-container {
-                    display: grid;
-                    height: inherit;
-                    width: 20em;
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 25em;
+                    justify-content: space-between;
 
                     .line-element {
                         height: 3px;
@@ -63,7 +63,7 @@
                     }
                     p {
                         height: fit-content;
-                        font-size: em(12px);
+                        font-size: em(18px);
                     }
                 }
             }
