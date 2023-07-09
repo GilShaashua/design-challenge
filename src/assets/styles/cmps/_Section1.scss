@@ -1,28 +1,30 @@
 .section1 {
     background-color: $clr7;
     position: relative;
+    height: em(684px);
 
     .element-right {
-        width: 5em;
+        width: em(100px);
         position: absolute;
         right: 0;
         bottom: 0;
     }
 
     .section1-inner-container {
-        padding-block: 5em;
         justify-content: space-between;
         position: relative;
         column-gap: 8em;
+        padding-block: 11em;
 
         .element-heading-container {
             flex: 1;
+
             .element {
                 height: 2.5px;
                 width: 2em;
                 background-color: $clr2;
                 position: absolute;
-                top: 3em;
+                top: 8em;
             }
         }
 
@@ -31,9 +33,9 @@
         }
 
         .content {
-            display: grid;
-            row-gap: 2em;
             flex: 1;
+            display: grid;
+            align-content: space-between;
 
             article {
                 column-gap: 1.5em;

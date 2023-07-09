@@ -4,7 +4,7 @@
     position: relative;
 
     img {
-        width: 10em;
+        width: em(200px);
         position: absolute;
         left: 0;
         bottom: 0;
@@ -19,8 +19,8 @@
         }
 
         button {
-            height: em(48px);
-            width: em(153px);
+            height: em(42px);
+            width: em(136px);
             line-height: 0;
             color: $clr7;
             font-size: em(18px);

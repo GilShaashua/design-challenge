@@ -5,14 +5,14 @@
     position: relative;
 
     .element-left-reviews {
-        width: 10em;
+        width: em(147px);
         position: absolute;
         left: 0;
         top: 0;
     }
 
     .element-right-reviews {
-        width: 10em;
+        width: em(200px);
         position: absolute;
         right: 0;
         bottom: 0;
