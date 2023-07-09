@@ -18,14 +18,21 @@
                 }
             }
         }
+
         button {
             border-radius: 555px;
             border: 1px solid $clr3;
-            padding-block: em(12px);
-            padding-inline: em(24px);
+            height: em(48px);
+            width: em(153px);
 
             a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 10;
                 color: $clr3;
+                height: 100%;
+                width: 100%;
             }
         }
     }
