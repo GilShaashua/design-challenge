@@ -27,13 +27,16 @@
     font-size: rem(30px);
 }
 
+.clean-list {
+    list-style: none;
+}
+
 // flex helpers
 
 .flex {
-
     display: flex;
 
-    >*.full {
+    > *.full {
         flex: 1;
     }
 

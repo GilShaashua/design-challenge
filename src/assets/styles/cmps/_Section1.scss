@@ -20,8 +20,8 @@
             flex: 1;
 
             .element {
-                height: 2.5px;
-                width: 2em;
+                height: 4px;
+                width: em(50px);
                 background-color: $clr2;
                 position: absolute;
                 top: 8em;

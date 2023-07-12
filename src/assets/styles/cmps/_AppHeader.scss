@@ -23,8 +23,9 @@
         button {
             border-radius: 555px;
             border: 1px solid $clr3;
-            height: em(58px);
-            width: em(183px);
+            height: em(48px);
+            width: em(153px);
+            font-size: em(18px);
 
             a {
                 display: flex;
@@ -34,7 +35,6 @@
                 color: $clr3;
                 height: 100%;
                 width: 100%;
-                font-size: em(18px);
             }
         }
     }
