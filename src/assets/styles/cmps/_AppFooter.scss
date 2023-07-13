@@ -25,9 +25,18 @@
                 nav {
                     display: flex;
                     column-gap: 2em;
+
                     a {
                         color: $clr3;
                         font-size: em(18px);
+
+                        &:hover {
+                            color: $clr2;
+                        }
+
+                        &.active {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
@@ -47,12 +56,18 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-end;
+
             .icons {
                 column-gap: 1em;
-                img {
-                    width: 1em;
+
+                path {
+                    &:hover {
+                        fill: $clr2;
+                        cursor: pointer;
+                    }
                 }
             }
+
             p {
                 font-size: em(15px);
                 color: rgb(190, 190, 190);

@@ -1,7 +1,4 @@
 import { NavLink } from 'react-router-dom'
-import facebookIcon from '../assets/img/icon-facebook.svg'
-import pinterestIcon from '../assets/img/icon-pinterest.svg'
-import twiterIcon from '../assets/img/icon-twitter.svg'
 
 export function AppFooter() {
     return (

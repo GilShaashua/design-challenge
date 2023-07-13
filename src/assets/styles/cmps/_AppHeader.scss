@@ -27,6 +27,14 @@
             width: em(153px);
             font-size: em(18px);
 
+            &:hover {
+                background-color: $clr3;
+
+                a {
+                    color: $clr8;
+                }
+            }
+
             a {
                 display: flex;
                 justify-content: center;
@@ -43,15 +51,14 @@
         font-size: em(18px);
 
         a {
-            color: $clr2;
+            color: $clr3;
 
             &.active {
-                color: $clr3;
+                text-decoration: underline;
             }
 
             &:hover {
-                transform: scale(102%);
-                transition: transform 0.2s ease-in-out;
+                color: $clr2;
             }
         }
     }

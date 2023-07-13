@@ -47,6 +47,12 @@
                     position: absolute;
                     bottom: em(-25px);
                     cursor: pointer;
+
+                    circle {
+                        &:hover {
+                            fill: $clr3;
+                        }
+                    }
                 }
             }
 
@@ -70,12 +76,25 @@
 
                 .social-icons {
                     margin-block-end: 3em;
+
+                    path {
+                        &:hover {
+                            fill: $clr2;
+                            cursor: pointer;
+                        }
+                    }
                 }
 
                 .btn-minus {
                     position: absolute;
                     bottom: em(-25px);
                     cursor: pointer;
+
+                    circle {
+                        &:hover {
+                            fill: $clr3;
+                        }
+                    }
                 }
             }
         }

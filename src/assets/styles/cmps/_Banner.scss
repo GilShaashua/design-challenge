@@ -28,6 +28,14 @@
             background-color: transparent;
             border: 2px solid $clr7;
 
+            &:hover {
+                background-color: $clr7;
+
+                a {
+                    color: $clr3;
+                }
+            }
+
             a {
                 color: $clr8;
             }
