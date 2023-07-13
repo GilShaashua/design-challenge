@@ -1,0 +1,103 @@
+.contact-us-container {
+    background-color: $clr1;
+    position: relative;
+    padding-block-end: 2em;
+
+    .element-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .element-right {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .contact-us-inner-container {
+        column-gap: 6em;
+        height: fit-content;
+
+        .content {
+            flex: 1;
+
+            h2 {
+                font-size: em(64px);
+                font-family: Livvic-Bold;
+                line-height: 1;
+                margin-block-end: 0.5em;
+            }
+
+            h3 {
+                font-size: em(32px);
+                font-family: Livvic-Bold;
+                color: $clr2;
+            }
+
+            .details {
+                margin-block-start: 2em;
+                row-gap: 1em;
+
+                li {
+                    column-gap: 1em;
+                }
+            }
+        }
+
+        .contact-us-form {
+            flex: 1.5;
+
+            & > *:not(:last-child) {
+                width: 100%;
+                margin: 0;
+            }
+
+            input {
+                background-color: transparent;
+                border: none;
+                border-block-end: 1px solid #ffffff93;
+                padding-inline: 1.5em;
+                padding-block: 1em;
+                color: $clr3;
+                height: em(52px);
+
+                &::placeholder {
+                    color: #ffffff93;
+                    font-size: em(15px);
+                    font-family: Livvic-SemiBold;
+                }
+            }
+
+            textarea {
+                background-color: transparent;
+                border: none;
+                border-block-end: 1px solid #ffffff93;
+                padding-inline: 1.5em;
+                padding-block: 1em;
+                color: $clr3;
+                min-height: 5em;
+                resize: none;
+                height: em(50px);
+
+                &::placeholder {
+                    color: #ffffff93;
+                    font-size: em(15px);
+                    font-family: Livvic-SemiBold;
+                }
+            }
+
+            button {
+                background-color: $clr3;
+                color: $clr6;
+                font-size: em(18px);
+                width: em(123px);
+                height: em(48px);
+                border-radius: 555px;
+                line-height: 1;
+                margin: 0;
+                // align-self: flex-end;
+            }
+        }
+    }
+}

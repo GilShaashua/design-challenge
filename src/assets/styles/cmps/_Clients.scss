@@ -1,0 +1,42 @@
+.clients-container {
+    background-color: $clr7;
+    height: em(437px);
+    position: relative;
+
+    .element-left {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .clients-inner-container {
+        row-gap: 3em;
+
+        h2 {
+            font-size: em(48px);
+            text-align: center;
+        }
+
+        .client-logos {
+            .theVergae {
+                width: em(150px);
+            }
+
+            .logoJakartaPost {
+                width: em(200px);
+            }
+
+            .logoTheGuardian {
+                width: em(200px);
+            }
+
+            .logoTechRadar {
+                width: em(180px);
+            }
+
+            .logoGadgetsNow {
+                width: em(100px);
+            }
+        }
+    }
+}
