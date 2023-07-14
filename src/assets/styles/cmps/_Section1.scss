@@ -1,65 +1,143 @@
-.section1 {
-    background-color: $clr7;
-    position: relative;
-    height: em(684px);
-
-    .element-right {
-        width: em(100px);
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-
-    .section1-inner-container {
-        justify-content: space-between;
+@include for-normal-layout {
+    .section1 {
+        background-color: $clr7;
         position: relative;
-        column-gap: 8em;
-        padding-block: 11em;
+        height: em(684px);
 
-        .element-heading-container {
-            flex: 1;
-
-            .element {
-                height: 4px;
-                width: em(50px);
-                background-color: $clr2;
-                position: absolute;
-                top: 8em;
-            }
+        .element-right {
+            width: em(100px);
+            position: absolute;
+            right: 0;
         }
 
-        h1 {
-            line-height: 1;
-        }
+        .section1-inner-container {
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            column-gap: 8em;
+            padding-block: 7em;
+            row-gap: 4em;
 
-        .content {
-            flex: 1;
-            display: grid;
-            align-content: space-between;
-
-            article {
-                column-gap: 1.5em;
-                align-items: flex-start;
-
-                img {
-                    width: 4em;
+            .element-heading-container {
+                .element {
+                    height: 4px;
+                    width: em(50px);
+                    background-color: $clr2;
+                    position: absolute;
+                    top: 4em;
                 }
+            }
 
-                .inner-content {
-                    display: flex;
-                    flex-direction: column;
-                    row-gap: 0.7em;
+            h1 {
+                line-height: 1;
+                font-family: Livvic-Bold;
+                font-size: em(32px);
+            }
 
-                    h3 {
-                        font-size: em(18px);
-                        color: $clr2;
-                        width: fit-content;
+            .content {
+                flex: 1;
+                display: grid;
+                row-gap: 2em;
+
+                article {
+                    column-gap: 1.5em;
+                    align-items: flex-start;
+
+                    img {
+                        width: 4em;
                     }
 
-                    p {
-                        font-size: em(15px);
-                        color: lightgray;
-                        width: fit-content;
+                    .inner-content {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 0.7em;
+
+                        h3 {
+                            font-size: em(18px);
+                            color: $clr2;
+                            width: fit-content;
+                        }
+
+                        p {
+                            font-size: em(15px);
+                            color: lightgray;
+                            width: fit-content;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include for-wide-layout {
+    .section1 {
+        background-color: $clr7;
+        position: relative;
+        height: em(684px);
+
+        .element-right {
+            width: em(100px);
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .section1-inner-container {
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            column-gap: 8em;
+            padding-block: 11em;
+            row-gap: 0;
+
+            .element-heading-container {
+                flex: 1;
+
+                .element {
+                    height: 4px;
+                    width: em(50px);
+                    background-color: $clr2;
+                    position: absolute;
+                    top: 8em;
+                }
+            }
+
+            h1 {
+                line-height: 1;
+                font-family: Livvic-Bold;
+                font-size: em(48px);
+            }
+
+            .content {
+                flex: 1;
+                display: grid;
+                align-content: space-between;
+
+                article {
+                    column-gap: 1.5em;
+                    align-items: flex-start;
+
+                    img {
+                        width: 4em;
+                    }
+
+                    .inner-content {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 0.7em;
+
+                        h3 {
+                            font-size: em(18px);
+                            color: $clr2;
+                            width: fit-content;
+                        }
+
+                        p {
+                            font-size: em(15px);
+                            color: lightgray;
+                            width: fit-content;
+                        }
                     }
                 }
             }

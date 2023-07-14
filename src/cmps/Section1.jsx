@@ -9,10 +9,7 @@ export function Section1() {
             <div className="section1-inner-container flex">
                 <div className="element-heading-container">
                     <div className="element"></div>
-                    <h1>
-                        Build & manage <br /> distributed teams <br /> like no
-                        one else.
-                    </h1>
+                    <h1>Build & manage distributed teams like no one else.</h1>
                 </div>
                 <div className="content">
                     <article className="flex">
