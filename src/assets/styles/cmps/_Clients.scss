@@ -1,41 +1,97 @@
-.clients-container {
-    background-color: $clr7;
-    height: em(437px);
-    position: relative;
+@include for-normal-layout {
+    .clients-container {
+        background-color: $clr7;
+        height: em(308px);
+        position: relative;
 
-    .element-left {
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-
-    .clients-inner-container {
-        row-gap: 3em;
-
-        h2 {
-            font-size: em(48px);
-            text-align: center;
+        .element-left {
+            display: none;
         }
 
-        .client-logos {
-            .theVergae {
-                width: em(150px);
+        .element-tablet {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .clients-inner-container {
+            row-gap: 3em;
+
+            h2 {
+                font-size: em(32px);
+                text-align: center;
             }
 
-            .logoJakartaPost {
-                width: em(200px);
+            .client-logos {
+                .theVergae {
+                    width: em(100px);
+                }
+
+                .logoJakartaPost {
+                    width: em(150px);
+                }
+
+                .logoTheGuardian {
+                    width: em(150px);
+                }
+
+                .logoTechRadar {
+                    width: em(120px);
+                }
+
+                .logoGadgetsNow {
+                    width: em(70px);
+                }
+            }
+        }
+    }
+}
+
+@include for-wide-layout {
+    .clients-container {
+        background-color: $clr7;
+        height: em(437px);
+        position: relative;
+
+        .element-left {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .element-tablet {
+            display: none;
+        }
+
+        .clients-inner-container {
+            row-gap: 3em;
+
+            h2 {
+                font-size: em(48px);
+                text-align: center;
             }
 
-            .logoTheGuardian {
-                width: em(200px);
-            }
+            .client-logos {
+                .theVergae {
+                    width: em(150px);
+                }
 
-            .logoTechRadar {
-                width: em(180px);
-            }
+                .logoJakartaPost {
+                    width: em(200px);
+                }
 
-            .logoGadgetsNow {
-                width: em(100px);
+                .logoTheGuardian {
+                    width: em(200px);
+                }
+
+                .logoTechRadar {
+                    width: em(180px);
+                }
+
+                .logoGadgetsNow {
+                    width: em(100px);
+                }
             }
         }
     }

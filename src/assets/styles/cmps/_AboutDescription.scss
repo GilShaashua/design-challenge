@@ -1,34 +1,82 @@
-.about-description-warp {
-    background-color: $clr1;
-    position: relative;
-    height: em(328px);
+@include for-normal-layout {
+    .about-description-warp {
+        background-color: $clr1;
+        position: relative;
+        height: em(384px);
 
-    svg {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-
-    .about-description-container {
-        height: em(150px);
-
-        .about {
-            flex: 1;
-
-            h1 {
-                font-size: em(64px);
-                font-family: Livvic-Bold;
-                line-height: 1;
-            }
+        svg {
+            position: absolute;
+            right: 0;
+            bottom: 0;
         }
 
-        .description {
-            flex: 2;
+        .about-description-container {
+            text-align: center;
+            flex-direction: column;
 
-            .line-element {
-                width: em(50px);
-                height: em(4px);
-                background: $clr2;
+            .about {
+                flex: 1;
+
+                h1 {
+                    margin-block-end: 0.5em;
+                    font-size: em(64px);
+                    font-family: Livvic-Bold;
+                    line-height: 1;
+                }
+            }
+
+            .description {
+                flex: 2;
+
+                P {
+                    line-height: em(28px);
+                }
+
+                .line-element {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@include for-wide-layout {
+    .about-description-warp {
+        background-color: $clr1;
+        position: relative;
+        height: em(328px);
+
+        svg {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .about-description-container {
+            text-align: unset;
+            flex-direction: row;
+            height: em(150px);
+
+            .about {
+                flex: 1;
+
+                h1 {
+                    margin-block-end: unset;
+                    font-size: em(64px);
+                    font-family: Livvic-Bold;
+                    line-height: 1;
+                }
+            }
+
+            .description {
+                flex: 2;
+
+                .line-element {
+                    display: block;
+                    width: em(50px);
+                    height: em(4px);
+                    background: $clr2;
+                }
             }
         }
     }
