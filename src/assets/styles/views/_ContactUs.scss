@@ -1,3 +1,117 @@
+@include for-narrow-layout {
+    .contact-us-container {
+        background-color: $clr1;
+        position: relative;
+        padding-block-end: 2em;
+        height: em(1034px);
+        place-content: center;
+
+        .element-left {
+            position: absolute;
+            top: 1.5em;
+            left: 0;
+            width: 100px;
+            height: fit-content;
+        }
+
+        .element-right {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 80px;
+            height: fit-content;
+        }
+
+        .contact-us-inner-container {
+            flex-direction: column;
+            text-align: center;
+            column-gap: 6em;
+            row-gap: 3em;
+            height: fit-content;
+
+            .content {
+                h2 {
+                    font-size: em(64px);
+                    font-family: Livvic-Bold;
+                    line-height: 1;
+                    margin-block-end: 0.5em;
+                }
+
+                h3 {
+                    font-size: em(32px);
+                    font-family: Livvic-Bold;
+                    color: $clr2;
+                }
+
+                .details {
+                    margin-block-start: 2em;
+                    row-gap: 1em;
+                    font-size: em(18px);
+
+                    li {
+                        column-gap: 1em;
+                    }
+                }
+            }
+
+            .contact-us-form {
+                height: em(400px);
+
+                & > *:not(:last-child) {
+                    width: 100%;
+                    margin: 0;
+                }
+
+                input {
+                    background-color: transparent;
+                    border: none;
+                    border-block-end: 1px solid #ffffff93;
+                    padding-inline: 1.5em;
+                    padding-block: 1em;
+                    color: $clr3;
+                    height: em(52px);
+
+                    &::placeholder {
+                        color: #ffffff93;
+                        font-size: em(15px);
+                        font-family: Livvic-SemiBold;
+                    }
+                }
+
+                textarea {
+                    background-color: transparent;
+                    border: none;
+                    border-block-end: 1px solid #ffffff93;
+                    padding-inline: 1.5em;
+                    padding-block: 1em;
+                    color: $clr3;
+                    min-height: 5em;
+                    resize: none;
+                    height: em(50px);
+
+                    &::placeholder {
+                        color: #ffffff93;
+                        font-size: em(15px);
+                        font-family: Livvic-SemiBold;
+                    }
+                }
+
+                button {
+                    background-color: $clr3;
+                    color: $clr6;
+                    font-size: em(18px);
+                    width: em(123px);
+                    height: em(48px);
+                    border-radius: 555px;
+                    line-height: 1;
+                    margin: 0;
+                    margin-block-start: 1em;
+                }
+            }
+        }
+    }
+}
+
 @include for-normal-layout {
     .contact-us-container {
         background-color: $clr1;
@@ -10,12 +124,14 @@
             position: absolute;
             top: 4em;
             left: 0;
+            width: 100px;
         }
 
         .element-right {
             position: absolute;
             right: 0;
             bottom: 0;
+            width: 100px;
         }
 
         .contact-us-inner-container {

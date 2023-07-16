@@ -1,3 +1,51 @@
+@include for-narrow-layout {
+    .banner-container {
+        background-color: $clr2;
+        height: em(200px);
+        position: relative;
+
+        img {
+            width: em(200px);
+            position: absolute;
+            left: em(-100px);
+            bottom: 0;
+        }
+
+        .banner-inner-container {
+            h3 {
+                font-size: em(32px);
+                font-family: Livvic-Bold;
+                color: $clr7;
+                line-height: 0;
+            }
+
+            button {
+                margin: 0;
+                height: em(42px);
+                width: em(136px);
+                line-height: 0;
+                color: $clr7;
+                font-size: em(18px);
+                border-radius: 555px;
+                background-color: transparent;
+                border: 2px solid $clr7;
+
+                &:hover {
+                    background-color: $clr7;
+
+                    a {
+                        color: $clr3;
+                    }
+                }
+
+                a {
+                    color: $clr8;
+                }
+            }
+        }
+    }
+}
+
 @include for-normal-layout {
     .banner-container {
         background-color: $clr2;

@@ -1,3 +1,65 @@
+@include for-narrow-layout {
+    .app-footer {
+        background-color: $clr8;
+        height: em(271px);
+        color: $clr3;
+        align-content: center;
+
+        .footer-inner-container {
+            display: none;
+        }
+
+        .footer-inner-container-tablet {
+            height: em(155px);
+
+            .logo-nav-icons-container {
+                height: 100%;
+                .logo-nav {
+                    .logo {
+                        margin-block-end: 3.5em;
+
+                        h1 {
+                            line-height: 0.5;
+                            font-size: em(32px);
+                        }
+                    }
+
+                    nav {
+                        a {
+                            color: $clr3;
+
+                            &:hover {
+                                color: $clr2;
+                            }
+
+                            &.active {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .icons {
+                }
+            }
+
+            .location-reserved {
+                height: 100%;
+                color: #ffffff75;
+                font-size: em(15px);
+
+                .location-details {
+                    text-align: right;
+
+                    & > * {
+                        margin-block-end: 0.2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @include for-normal-layout {
     .app-footer {
         background-color: $clr8;

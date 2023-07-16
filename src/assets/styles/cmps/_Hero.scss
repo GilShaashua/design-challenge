@@ -1,3 +1,58 @@
+@include for-narrow-layout {
+    .hero {
+        background-color: $clr1;
+        position: relative;
+        height: em(533px);
+
+        .element-left-side {
+            display: none;
+        }
+
+        .element-right-side {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+            width: 25em;
+        }
+
+        .container {
+            .hero-inner-container {
+                flex-direction: column;
+                row-gap: 1.5em;
+                margin-block-start: 2em;
+
+                .title {
+                    h1 {
+                        font-size: em(64px);
+                        line-height: 1;
+                        font-family: Livvic-Bold;
+                        text-align: center;
+
+                        span {
+                            color: $clr2;
+                        }
+                    }
+                }
+
+                .paragraph {
+                    .paragraph-inner-container {
+                        .line-element {
+                        }
+
+                        p {
+                            text-align: center;
+                            font-size: em(15px);
+                            line-height: em(28px);
+                            width: em(457px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @include for-normal-layout {
     .hero {
         background-color: $clr1;
