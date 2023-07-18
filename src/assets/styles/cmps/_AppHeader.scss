@@ -1,3 +1,27 @@
+.blur-screen {
+    opacity: 1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000005e;
+    z-index: 1;
+    cursor: pointer;
+    transition: opacity 0.6s;
+    pointer-events: none;
+    opacity: 0;
+
+    &.menu-open {
+        pointer-events: auto;
+        opacity: 1;
+    }
+}
+
+@include for-narrow-layout {
+    .blur-screen {
+        display: none;
+    }
+}
+
 .app-header {
     background-color: $clr1;
     height: em(200px);
@@ -17,49 +41,183 @@
                 & > * {
                     margin-inline: 1em;
                 }
+
+                position: fixed;
+                z-index: 1;
+                right: 0;
+                top: 0;
+                background-color: $clr5;
+                height: 100vh;
+                width: 70%;
+                font-size: em(18px);
+                display: flex;
+                flex-direction: column;
+                padding-inline: 2em;
+                padding-block: 6em;
+                row-gap: 1em;
+                box-shadow: -1px 1px 20px rgb(0 0 0 / 50%);
+                transform: translateX(100%);
+                transition: transform 0.2s ease-in-out;
+
+                &.menu-open {
+                    transform: translateX(0);
+                }
+
+                a {
+                    color: $clr3;
+
+                    &.active {
+                        text-decoration: underline;
+                    }
+
+                    &:hover {
+                        color: $clr2;
+                    }
+                }
+
+                .btn-close-nav-mobile {
+                    position: absolute;
+                    right: 1em;
+                    top: 4em;
+                    cursor: pointer;
+                }
+
+                .btn-contact-us-mobile {
+                    border-radius: 555px;
+                    border: 2px solid $clr3;
+                    height: em(48px);
+                    width: em(153px);
+                    font-size: em(18px);
+
+                    &:hover {
+                        background-color: $clr3;
+
+                        a {
+                            color: $clr8;
+                        }
+                    }
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        line-height: 1;
+                        color: $clr3;
+                        height: 100%;
+                        width: 100%;
+                    }
+                    margin: 0;
+                    margin-block-start: 1em;
+                    width: 100%;
+                    background-color: transparent;
+                }
             }
         }
 
-        button {
-            border-radius: 555px;
-            border: 1px solid $clr3;
-            height: em(48px);
-            width: em(153px);
-            font-size: em(18px);
+        .btn-contact-us {
+            display: none;
+        }
+
+        .btn-mobile-nav {
+            padding: 0;
+            border: none;
+            width: unset;
+            height: unset;
 
             &:hover {
-                background-color: $clr3;
-
-                a {
-                    color: $clr8;
-                }
-            }
-
-            a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                line-height: 1;
-                color: $clr3;
-                height: 100%;
-                width: 100%;
+                background-color: transparent;
             }
         }
     }
+}
 
-    nav {
-        font-size: em(18px);
+@include for-narrow-layout {
+    .app-header {
+        background-color: $clr1;
+        height: em(200px);
 
-        a {
-            color: $clr3;
+        .app-header-inner-container {
+            .logo-nav-inner-container {
+                column-gap: em(40px);
 
-            &.active {
-                text-decoration: underline;
+                .logo {
+                    h1 {
+                        font-size: em(40px);
+                        margin-block-end: 0.2em;
+                    }
+                }
+
+                nav {
+                    & > * {
+                        margin-inline: 1em;
+                    }
+
+                    position: unset;
+                    width: unset;
+                    height: unset;
+                    box-shadow: unset;
+                    background-color: unset;
+                    flex-direction: row;
+                    padding-inline: unset;
+                    padding-block: unset;
+                    row-gap: unset;
+                    transform: unset;
+                    transition: unset;
+
+                    font-size: em(18px);
+
+                    a {
+                        color: $clr3;
+
+                        &.active {
+                            text-decoration: underline;
+                        }
+
+                        &:hover {
+                            color: $clr2;
+                        }
+                    }
+
+                    .btn-contact-us-mobile {
+                        display: none;
+                    }
+
+                    .btn-close-nav-mobile {
+                        display: none;
+                    }
+                }
             }
 
-            &:hover {
-                color: $clr2;
+            .btn-contact-us {
+                display: block;
+                border-radius: 555px;
+                border: 1px solid $clr3;
+                height: em(48px);
+                width: em(153px);
+                font-size: em(18px);
+
+                &:hover {
+                    background-color: $clr3;
+
+                    a {
+                        color: $clr8;
+                    }
+                }
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    line-height: 1;
+                    color: $clr3;
+                    height: 100%;
+                    width: 100%;
+                }
             }
+        }
+
+        .btn-mobile-nav {
+            display: none;
         }
     }
 }
