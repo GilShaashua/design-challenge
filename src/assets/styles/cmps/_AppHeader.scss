@@ -24,7 +24,7 @@
 
 .app-header {
     background-color: $clr1;
-    height: em(200px);
+    height: em(126px);
 
     .app-header-inner-container {
         .logo-nav-inner-container {
@@ -80,6 +80,13 @@
                     right: 1em;
                     top: 4em;
                     cursor: pointer;
+                }
+
+                .element-mobile {
+                    margin: 0;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
                 }
 
                 .btn-contact-us-mobile {
@@ -183,6 +190,10 @@
                     }
 
                     .btn-close-nav-mobile {
+                        display: none;
+                    }
+
+                    .element-mobile {
                         display: none;
                     }
                 }
